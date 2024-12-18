@@ -21,7 +21,6 @@ class ConfigParser:
             value = value.strip()
             self.constants[name] = self._parse_value(value)
 
-        # Replace ${имя} with the corresponding value
         def replace_constant(match):
             name = match.group(1)
             if name in self.constants:
@@ -80,7 +79,6 @@ if __name__ == "__main__":
     parser.add_argument("-i", "--input", help="Path to the input configuration file. If not provided, reads from standard input.", default=None)
     args = parser.parse_args()
 
-    # Read input text
     if args.input:
         with open(args.input, 'r') as input_file:
             input_text = input_file.read()
