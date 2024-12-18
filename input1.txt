@@ -1,0 +1,8 @@
+table([
+    simulation_name = 'Experiment1',
+    parameters = table([
+        speed = 10.5,
+        duration = 3600,
+    ]),
+    outputs = '( log data summary )',
+])

@@ -1,0 +1,8 @@
+table([
+    device_id = 'ABC123',
+    sensors = '( temperature humidity pressure )',
+    thresholds = table([
+        temp = 100,
+        hum = 70,
+    ]),
+])
