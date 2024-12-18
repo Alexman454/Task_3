@@ -33,8 +33,43 @@ ${имя}
 python config_to_yaml.py output.yaml -i input.txt
 ```
 # Тесты
+### Входные данные.
+```
+table([
+    simulation_name = 'Experiment1',
+    parameters = table([
+        speed = 10.5,
+        duration = 3600,
+    ]),
+    outputs = '( log data summary )',
+])
+```
+### Выходные данные.
 ![](https://github.com/Alexman454/Task_3/blob/main/output1.png)
-
+### Входные данные.
+```
+table([
+    device_id = 'ABC123',
+    sensors = '( temperature humidity pressure )',
+    thresholds = table([
+        temp = 100,
+        hum = 70,
+    ]),
+])
+```
+### Выходные данные.
 ![](https://github.com/Alexman454/Task_3/blob/main/output2.png)
-
+### Входные данные.
+```
+table([
+    app_name = 'MyApp',
+    version = 1.0,
+    features = '( authentication analytics )',
+    database = table([
+        host = 'localhost',
+        port = 5432,
+    ]),
+])
+```
+### Выходные данные.
 ![](https://github.com/Alexman454/Task_3/blob/main/output3.png)
