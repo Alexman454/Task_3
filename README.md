@@ -47,7 +47,23 @@ ${имя}
 python config_to_yaml.py output.yaml -i input.txt
 ```
 # Тесты
-### Входные данные.
+### Входные данные для проверки работы с разными входными данными.
+```
+{# task to do #},
+table([
+    occupation = 'filler',
+    a = [Red]+,
+    number = 993.3,
+    bester = '( analytics coder )',
+    question table([
+        quest = 'why',
+        answ = $42,
+    ]),
+])
+```
+### Выходные данные проверки.
+![](https://github.com/Alexman454/Task_3/blob/main/last_test.png)
+### Входные данные первой конфигурации.
 ```
 table([
     simulation_name = 'Experiment1',
@@ -58,9 +74,9 @@ table([
     outputs = '( log data summary )',
 ])
 ```
-### Выходные данные.
+### Выходные данные первой конфигурации.
 ![](https://github.com/Alexman454/Task_3/blob/main/output1.png)
-### Входные данные.
+### Входные данные второй конфигурации.
 ```
 table([
     device_id = 'ABC123',
@@ -71,9 +87,9 @@ table([
     ]),
 ])
 ```
-### Выходные данные.
+### Выходные данные второй конфигурации
 ![](https://github.com/Alexman454/Task_3/blob/main/output2.png)
-### Входные данные.
+### Входные данные третьей конфигурации.
 ```
 table([
     app_name = 'MyApp',
@@ -85,5 +101,5 @@ table([
     ]),
 ])
 ```
-### Выходные данные.
+### Выходные данные третьей конфигурации.
 ![](https://github.com/Alexman454/Task_3/blob/main/output3.png)
