@@ -1,0 +1,11 @@
+{# task to do #},
+table([
+    occupation = 'filler',
+    a = [Red]+,
+    number = 993.3,
+    bester = '( analytics coder )',
+    question table([
+        quest = 'why',
+        answ = $42,
+    ]),
+])
